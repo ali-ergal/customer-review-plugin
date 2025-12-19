@@ -4,7 +4,10 @@
   "description": "Smart Ratings WordPress Plugin",
   "scripts": {
     "build": "gulp",
-    "watch": "gulp dev"
+    "watch": "gulp dev",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -12,7 +15,12 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "babel-jest": "^29.7.0"
   }
 }
 
